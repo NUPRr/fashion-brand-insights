@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { products } from "./products";
 const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+const img = (p) => `${import.meta.env.BASE_URL}fashion-images/${p}`;
 import {
   BarChart,
   Bar,
@@ -23,7 +24,7 @@ import {
 
 import "./App.css";
 
-const img = (p) => `${import.meta.env.BASE_URL}fashion-images/${p}`;
+
 
 const inr = (n) =>
   n ? "₹" + Number(n).toLocaleString("en-IN") : "—";
@@ -507,21 +508,20 @@ export default function App() {
                   ? " active"
                   : "")
               }
-              style={bg(
-                `categories/${
-                  category === "Ethnic Wear"
-                    ? "ethnic"
-                    : category
-                        .toLowerCase()
-                        .replace(" ", "-")
-                }.jpg`,
-                "#d9cfc1"
-              )}
-              onClick={() => setCat(category)}
-            >
-              <span>{category}</span>
-            </button>
-          ))}
+style={{
+  backgroundImage: `url(${asset(
+    `fashion-images/categories/${
+      category === "Ethnic Wear"
+        ? "ethnic"
+        : category.toLowerCase().replace(" ", "-")
+    }.jpg`
+  )})`,
+}}
+onClick={() => setCat(category)}
+>
+  <span>{category}</span>
+</button>
+))}
         </div>
 
         <div className="chart-card">

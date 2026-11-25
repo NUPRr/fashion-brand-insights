@@ -4,4 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/fashion-brand-insights/",
+  build: {
+    outDir: "docs",
+  },
 });
