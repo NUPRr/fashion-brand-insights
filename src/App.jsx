@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { products } from "./products";
-
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 import {
   BarChart,
   Bar,
@@ -23,7 +23,7 @@ import {
 
 import "./App.css";
 
-const img = (p) => `/fashion-images/${p}`;
+const img = (p) => `${import.meta.env.BASE_URL}fashion-images/${p}`;
 
 const inr = (n) =>
   n ? "₹" + Number(n).toLocaleString("en-IN") : "—";
