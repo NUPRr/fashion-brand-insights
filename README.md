@@ -1,16 +1,67 @@
-# React + Vite
+# FashionIQ — Competitive Fashion Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FashionIQ is a competitive fashion intelligence dashboard designed to compare fashion brands across pricing, product categories, assortment, discounts, and market positioning.
 
-Currently, two official plugins are available:
+The dashboard provides a visual and interactive way to explore competitive signals between **Zara, H&M, and AZORTE**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Brand comparison across Zara, H&M, and AZORTE
+- Category-wise product analysis
+- Price comparison
+- Discount analysis
+- Product assortment insights
+- Interactive product filters
+- Product intelligence table
+- Executive insights based on the available dataset
+- Responsive design for desktop, tablet, and mobile
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- Recharts
+- Framer Motion
+- Git & GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Dashboard Sections
+
+### Market Overview
+High-level competitive metrics including brand coverage, pricing, discounts, and assortment.
+
+### Brand Intelligence
+Comparison of the three brands based on positioning, pricing, and category presence.
+
+### Category Intelligence
+Visual comparison of pricing and assortment across major fashion categories.
+
+### Executive Insights
+Key competitive signals derived from the current dataset.
+
+### Product Intelligence
+Filterable product-level analysis including:
+
+- Product
+- Brand
+- Category
+- Price
+- Discount
+- Collection
+- Observation date
+
+## Project Structure
+
+```text
+src/
+├── App.jsx
+├── App.css
+├── index.css
+├── data.js
+├── products.js
+└── main.jsx
+
+public/
+└── fashion-images/
